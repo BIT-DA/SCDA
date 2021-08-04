@@ -9,7 +9,7 @@ Code release for "Semantic Concentration for Domain Adaptation" (ICCV 2021)
 [Semantic Concentration for Domain Adaptation](https://arxiv.org/abs/2103.12562) 
 (ICCV 2021)
 
-We propose Semantic Concentration for Domain Adaptation (SCDA), which encourages the model to concentrate on the most principal features via the pair-wise adversarial alignment of prediction distributions
+We propose Semantic Concentration for Domain Adaptation (SCDA), which encourages the model to concentrate on the most principal features via the pair-wise adversarial alignment of prediction distributions
 
 ## Requirements
 
