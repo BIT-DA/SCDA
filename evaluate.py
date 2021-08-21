@@ -44,9 +44,11 @@ def main(args: argparse.Namespace):
 
     test_dataset = ImageList(open(args.t_test_path).readlines(), transform=val_tranform)
     test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, num_workers=64)
+    print("transfer model path: {}".format(args.weight_path))
+    print("test dataset path: {}".format(args.t_test_path))
 
     # load model
-    print("=> using pre-trained model '{}'".format(args.arch))
+    print("backbone '{}'".format(args.arch))
     backbone = BackboneNetwork.__dict__[args.arch](pretrained=True)
     if args.dset == "office":
         num_classes = 31
@@ -82,7 +84,6 @@ def test(val_loader, model):
         _, predict = torch.max(all_output, 1)
         accuracy = torch.sum(torch.squeeze(predict).float() == all_label).item() / float(all_label.size()[0])
         accuracy = accuracy * 100.0
-        print(' accuracy:{:.3f}'.format(accuracy))
     return accuracy
 
 if __name__ == '__main__':
