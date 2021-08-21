@@ -53,7 +53,7 @@ python3 train_SCDA.py --gpu_id 2 --arch resnet50 --dset office --output_dir log/
 ## Evaluate
 evaluate on DomainNet
 ```
-python3 evaluate.py --gpu_id 2 --arch resnet101 --dset domainnet --t_test_path data/list/DomainNet/infograph_test.txt --weight_path checkpoint/clp2inf_model.pth.tar
+python3 evaluate.py --gpu_id 2 --arch resnet50 --dset office --t_test_path data/list/office31/webcam_31.txt --weight_path Checkpoint/amazon-webcam.pth.tar
 ```
 
 
