@@ -33,7 +33,6 @@ Office-Home dataset can be found [here](http://hemanthdv.org/OfficeHome-Dataset/
 ### DomainNet
 DomainNet dataset can be found [here](http://ai.bu.edu/M3SDA/).
 
-
 ## Running the code
 
 Train on DomainNet with ResNet-101
@@ -52,6 +51,9 @@ python3 train_SCDA.py --gpu_id 2 --arch resnet50 --dset office --output_dir log/
 ```
 
 ## Evaluate
+
+Pre-trained models can be downloaded [here](https://github.com/BIT-DA/SCDA/releases) and put in <root_dir>/Checkpoint
+
 evaluate on DomainNet
 ```
 python3 evaluate.py --gpu_id 2 --arch resnet50 --dset office --t_test_path data/list/office31/webcam_31.txt --weight_path Checkpoint/amazon-webcam.pth.tar
