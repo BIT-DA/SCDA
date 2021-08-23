@@ -13,7 +13,8 @@ We propose Semantic Concentration for Domain Adaptation (SCDA), which encourages
 
 ## Requirements
 
-* `CUDA 10.0.130`
+The model is trained on a NVIDIA RTX 2080Ti GPU.
+
 * `python 3.7`
 * `torch >= 1.7.0`
 * `torchvision >= 0.8.1`
