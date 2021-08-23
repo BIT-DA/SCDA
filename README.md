@@ -52,7 +52,7 @@ python3 train_SCDA.py --gpu_id 2 --arch resnet50 --dset office --output_dir log/
 
 ## Evaluate
 
-Pre-trained models can be downloaded [here](https://github.com/BIT-DA/SCDA/releases) and put in <root_dir>/Checkpoint
+Several pre-trained models of SCDA can be downloaded [here](https://github.com/BIT-DA/SCDA/releases) and put in <root_dir>/Checkpoint
 
 evaluate on Office-31
 ```
