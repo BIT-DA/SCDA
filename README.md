@@ -54,9 +54,9 @@ python3 train_SCDA.py --gpu_id 2 --arch resnet50 --dset office --output_dir log/
 
 Pre-trained models can be downloaded [here](https://github.com/BIT-DA/SCDA/releases) and put in <root_dir>/Checkpoint
 
-evaluate on DomainNet
+evaluate on Office-31
 ```
-python3 evaluate.py --gpu_id 2 --arch resnet50 --dset office --t_test_path data/list/office31/webcam_31.txt --weight_path Checkpoint/amazon-webcam.pth.tar
+python3 evaluate.py --gpu_id 2 --arch resnet50 --dset office --t_test_path data/list/office31/webcam_31.txt --weight_path Checkpoint/amazon-webcam.pth.zip
 ```
 
 
